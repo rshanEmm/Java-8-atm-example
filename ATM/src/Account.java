@@ -78,7 +78,7 @@ public class Account {
     public void getCheckingWithdrawInput() {
         System.out.println("Checking Account Balance: " + moneyFormat.format(checkingBalance));
         System.out.print("Amount you want to withdraw from Checking Account: ");
-        double amount = input.nextInt();
+        double amount = input.nextDouble();
         if(!depositSanityCheck(amount)){
             System.out.println("Incorrect or insufficient funds");
             return;
